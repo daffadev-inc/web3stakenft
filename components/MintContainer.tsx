@@ -8,6 +8,7 @@ import {
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import React from "react";
+import Image from 'next/image';
 import Link from 'next/link';
 import { DROP_EDITION_ADDRESS } from "../const/contract";
 import styles from "../styles/App.module.scss";
@@ -30,7 +31,7 @@ export default function MintContainer() {
       <p>Claim your Character NFT to start playing!</p>
 
       <Card className={`${styles.nftBox} ${styles.spacerBottom}`}>
-        <img src="./mine.gif" style={{ height: 200 }} />
+        <Image src="/avatar.gif" width={200} height={200} />
 
       <Button
         onClick={() =>

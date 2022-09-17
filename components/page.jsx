@@ -4,6 +4,8 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import Image from 'next/image';
+import style from "../styles/App.module.scss";
 
 
 function Page() {
@@ -27,20 +29,21 @@ return (
         <Modal.Body className="show-grid">
         <Container>
           <Row>
-            <Col xs={12} md={8}>
-              .col-xs-12 .col-md-8
+            <Col xs={12} md={5}>
+              <Image src='/icons/noimage.jpg' width="640px" height="620px" className={style.page_img} />
             </Col>
-            <Col xs={12} md={4}>
-              .col-xs-12 .col-md-4
+            <Col xs={12} md={7} className={style.flx_column}>
+              <h1 className={style.font_title}>Join the Movement<br/><span className={style.flx_end}>and unlock</span>the unique Art</h1>
+                <span className={style.font_desc}>Let's discover our work.</span>
+        <div className={style.flx_end}>
+          <Button variant="primary" onClick={handleClose}>
+            Lanjutkan
+          </Button>
+        </div>
             </Col>
           </Row>
         </Container>
       </Modal.Body>
-      <Modal.Footer>
-          <Button variant="primary" onClick={handleClose}>
-            Lanjutkan
-          </Button>
-      </Modal.Footer>
       </Modal>
 </>
     )

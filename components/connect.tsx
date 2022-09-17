@@ -22,10 +22,10 @@ export default function Connect() {
 return (
 <>
 <Stack className="col-md-5 mx-auto">
-    <Card className={style.loginBox} style={{maxWidth: '22rem'}}>
+    <Card className={`${style.loginBox} ${style.glass}`} style={{maxWidth: '22rem'}}>
       <Card.Body>
            <Card.Title style={{textAlign: 'center'}}>Connect your Wallet</Card.Title>
-    <ListGroup>
+    <ListGroup className={style.glass}>
       <ListGroup.Item className={style.flx_btn_between} action  
           onClick={connectWithCoinbaseWallet}>
         Coinbase <i className={style.coinbase}></i>
