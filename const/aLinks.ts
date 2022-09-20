@@ -28,6 +28,35 @@ export const explorerUrl = () => {
   }
 }
 
+export const ChainIdname = () => {
+
+  switch (process.env.NEXT_PUBLIC_CHAIN_ID) {
+    case '1':
+      // Mainnet
+      return 'Ethereum'
+    case '4':
+      // Rinkeby
+      return 'Rinkeby'
+    case '5':
+      // Goerli
+      return 'Goerli'
+    case '137':
+      // Polygon
+      return 'Polygon'
+    case '80001':
+      // Munbai
+      return 'Mumbai'
+    case '250':
+      // Fantom
+      return 'Fantom'
+    case '4002':
+      // FantomTestnet
+      return 'Fantom-Testnet'
+    default:
+      return ''
+  }
+}
+
 export const swapUrl = () => {
   const token = process.env.NEXT_PUBLIC_TOKEN_CONTRACT_ADDRESS
   const chain = process.env.NEXT_PUBLIC_CHAIN_ID
@@ -70,6 +99,7 @@ export const discordUrl = () => {
 
 export const snsLinks = {
   explorerUrl,
+  ChainIdname,
   openseaUrl,
   twitterUrl,
   instagramUrl,

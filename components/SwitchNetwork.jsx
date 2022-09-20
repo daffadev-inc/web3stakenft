@@ -8,6 +8,7 @@ import {
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { RiErrorWarningFill } from "react-icons/ri";
+import { ChainIdname } from '../const/aLinks';
 import styles from "../styles/App.module.scss";
 
 
@@ -18,6 +19,7 @@ export default function SwitchNetwork() {
   const networkMismatch = useNetworkMismatch();
   const [, switchNetwork] = useNetwork();
 
+  const networkName = ChainIdname();
 
   return (
 <>
@@ -29,7 +31,7 @@ export default function SwitchNetwork() {
         <Modal.Header>
           <Modal.Title style={{color: '#cd0228',justifyContent: 'center'}} className={styles.flx_center}><RiErrorWarningFill/> Salah Jaringan</Modal.Title>
         </Modal.Header>
-        <Modal.Body style={{textAlign: 'center'}}>Silahkan ubah ke jaringan FANTOM.</Modal.Body>
+        <Modal.Body style={{textAlign: 'center'}}>Silahkan ubah ke jaringan {networkName}.</Modal.Body>
         <Modal.Footer>
     <Button onClick={() => switchNetwork(Number(process.env.NEXT_PUBLIC_CHAIN_ID))} className={styles.mainButton}>
       Ganti Jaringan

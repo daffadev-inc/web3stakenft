@@ -21,11 +21,6 @@ export default function MintContainer() {
 
   return (
     <div className={styles.collectionContainer}>
-        {address ? (
-        <Button onClick={() => disconnectWallet()}>
-                    <p style={{margin: 0, float: 'right'}}>{address.slice(0, 2).concat("*").concat(address.slice(-4))}</p>
-        </Button>
-          ) : (<></>)}
       <h1>Edition Drop</h1>
 
       <p>Claim your Character NFT to start playing!</p>
@@ -33,7 +28,7 @@ export default function MintContainer() {
       <Card className={`${styles.nftBox} ${styles.spacerBottom}`}>
         <Image src="/avatar.gif" width={200} height={200} />
 
-      <Button
+      <Button className={styles.btn_absBottom}
         onClick={() =>
           claim({
             quantity: 1,
@@ -45,6 +40,11 @@ export default function MintContainer() {
         {isLoading ? "Minting..." : "Mint"}
       </Button>
       </Card>
+        {address ? (
+        <Button onClick={() => disconnectWallet()}>
+                    <p style={{margin: 0, float: 'right'}}>{address.slice(0, 2).concat("*").concat(address.slice(-4))}</p>
+        </Button>
+          ) : (<></>)}
     </div>
   );
 }
