@@ -22,7 +22,7 @@ function Page() {
 
 return (
 <>
-      <Modal show={show} fullscreen={fullscreen} backdrop="static" keyboard={false} onHide={handleClose}>
+      <Modal show={show} fullscreen={fullscreen} backdrop="static" keyboard={false} onHide={handleClose} style={{backgroundColor: "#fff"}}>
         <Modal.Header>
           <Modal.Title>Site Name</Modal.Title>
         </Modal.Header>

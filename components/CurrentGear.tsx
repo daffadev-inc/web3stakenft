@@ -2,6 +2,7 @@ import { ThirdwebNftMedia, useAddress, useDisconnect, useNFT } from "@thirdweb-d
 import { EditionDrop, SmartContract } from "@thirdweb-dev/sdk";
 import React, { useEffect, useState } from "react";
 import Button from 'react-bootstrap/Button';
+import Disconnect from './Disconnect';
 import ContractMappingResponse from "../types/ContractMappingResponse";
 import EditionDropMetadata from "../types/EditionDropMetadata";
 import GameplayAnimation from "./GameplayAnimation";
@@ -34,7 +35,7 @@ export default function CurrentGear({
       if (!address) return;
 
       const p = (await miningContract.call(
-        "playerInitialD",
+        "miningToken",
         address
       )) as ContractMappingResponse;
 
@@ -54,11 +55,7 @@ export default function CurrentGear({
             <ThirdwebNftMedia metadata={playerNft?.metadata} height={"64"} />
 
           )}
-        {address ? (
-        <Button onClick={() => disconnectWallet()}>
-                    <p style={{margin: 0, float: 'right'}}>{address.slice(0, 2).concat("*").concat(address.slice(-4))}</p>
-        </Button>
-          ) : (<></>)}
+        <Disconnect/>
         </div>
       <h2 className={`${styles.noGapTop} `}>Staked Items</h2>
       <div
