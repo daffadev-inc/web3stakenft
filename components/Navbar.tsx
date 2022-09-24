@@ -5,7 +5,7 @@ import Disconnect from './Disconnect';
 function Navigation() {
   return (
     <Container>
-      <Navbar expand="lg" variant="light" bg="white">
+      <Navbar expand="lg" variant="light" bg="white" sticky="top">
         <Container>
           <Navbar.Brand href="#">TestNet</Navbar.Brand>
           <Disconnect/>

@@ -62,14 +62,14 @@ export default function MintContainer() {
 
   return (
 <>
-<Navigation sticky="top" />
+<Navigation />
     <div className={styles.collectionContainer}>
       <h1>Edition Drop</h1>
 
       <p>Claim your Character NFT to start playing!</p>
 
       <Card className={`${styles.nftBox} ${styles.spacerBottom}`}>
-        <Image src="/avatar.gif" width={300} height={300} />
+        <Image src="/avatar.gif" width={300} height={300} alt='avatar' />
 
         {isLoading ? (
       <Button className={styles.btn_absBottom} disabled>
