@@ -1,10 +1,11 @@
 import React from "react";
+import Image from 'next/image';
 import styles from "../styles/Gameplay.module.scss";
 import EditionDropMetadata from "../types/EditionDropMetadata";
 
 const GoldGem = (
   <div className={styles.slide}>
-    <img src="./gold-gem.png" height="48" width="48" alt="gold-gem" />
+    <Image src="./gold-gem.png" height={48} width={48} alt="gold-gem" />
   </div>
 );
 

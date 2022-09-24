@@ -12,7 +12,6 @@ import React from "react";
 import Image from 'next/image';
 import Link from 'next/link';
 import Swal from 'sweetalert2';
-import { useAlert } from 'react-alert';
 import { DROP_EDITION_ADDRESS } from "../const/contract";
 import styles from "../styles/App.module.scss";
 
