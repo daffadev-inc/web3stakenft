@@ -40,6 +40,8 @@ body {
   text-align: center;
 }
 
+.container {background-color: #fff;}
+
 .list-group {--bs-list-group-bg: none !important;}
 
 ::-webkit-scrollbar {

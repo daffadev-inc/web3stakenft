@@ -30,7 +30,7 @@ return (
         <Container>
           <Row>
             <Col xs={12} md={5}>
-              <Image src='/icons/noimage.jpg' width="640px" height="620px" className={style.page_img} />
+              <Image src='/icons/noimage.jpg' alt='' width="640px" height="620px" className={style.page_img} />
             </Col>
             <Col xs={12} md={7} className={style.flx_column}>
               <h1 className={style.font_title}>Join the Movement<br/><span className={style.flx_end}>and unlock</span>the unique Art</h1>
