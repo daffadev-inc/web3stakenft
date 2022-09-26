@@ -64,9 +64,9 @@ export default function MintContainer() {
 <>
 <Navigation />
     <div className={styles.collectionContainer}>
-      <h1>Edition Drop</h1>
+      <h1>BOT PASScard</h1>
 
-      <p>Claim your Character NFT to start playing!</p>
+      <p>Claim your BOT PassCard to start.</p>
 
       <Card className={`${styles.nftBox} ${styles.spacerBottom}`}>
         <Image src="/avatar.gif" width={300} height={300} alt='avatar' />
