@@ -24,7 +24,7 @@ return (
 <>
       <Modal show={show} fullscreen={fullscreen} backdrop="static" keyboard={false} onHide={handleClose} style={{backgroundColor: "#fff"}}>
         <Modal.Header>
-          <Modal.Title>Site Name</Modal.Title>
+          <Modal.Title>TestNet</Modal.Title>
         </Modal.Header>
         <Modal.Body className="show-grid">
         <Container>

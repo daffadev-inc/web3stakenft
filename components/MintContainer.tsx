@@ -41,8 +41,8 @@ export default function MintContainer() {
           onError: (error) => {
             const e = error;
             Swal.fire({
-              title: 'Gagal',
-              text: 'Gagal Claim NFT',
+              title: 'Error!',
+              text: 'Gagal Claim NFT..',
               icon: 'error',
               confirmButtonText: 'Blah'
               });
