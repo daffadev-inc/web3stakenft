@@ -31,12 +31,12 @@ export default function SwitchNetwork() {
         <Modal.Header>
           <Modal.Title style={{color: '#cd0228',justifyContent: 'center'}} className={styles.flx_center}><RiErrorWarningFill/> Salah Jaringan</Modal.Title>
         </Modal.Header>
-        <Modal.Body style={{textAlign: 'center'}}>Silahkan ubah ke jaringan {networkName}.</Modal.Body>
-        <Modal.Footer>
+        <Modal.Body style={{textAlign: 'center'}}>Silahkan ubah ke jaringan {networkName}.
+        <br /><p />
     <Button onClick={() => switchNetwork(Number(process.env.NEXT_PUBLIC_CHAIN_ID))} className={styles.mainButton}>
       Ganti Jaringan
     </Button>
-        </Modal.Footer>
+    </Modal.Body>
       </Modal>) : (<></>)}
 </>
     );
