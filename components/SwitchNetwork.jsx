@@ -34,7 +34,7 @@ export default function SwitchNetwork() {
         <Modal.Body style={{textAlign: 'center'}}>Silahkan ganti ke jaringan {networkName}.
         <br /><p />
     <Button onClick={() => switchNetwork(Number(process.env.NEXT_PUBLIC_CHAIN_ID))} className={styles.mainButton}>
-      Ganti Jaringan
+       Ganti Jaringan
     </Button>
     </Modal.Body>
       </Modal>) : (<></>)}
