@@ -78,6 +78,15 @@
     box-shadow: 0px 6px 20px -2px #6666;
 }
 
+.btn_logout {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  border-radius: 25px;
+  background: #fff;
+  color: #8347e6;
+}
+
 .btn {
   background-color: var(--tw-color1);
   outline: none;
@@ -199,6 +208,35 @@
   padding: 5px;
   color: #fff;
   font-weight: 600;
+}
+
+.switchButton {
+  cursor: pointer;
+  display: inline-flex;
+  appearance: none;
+  align-items: center;
+  -webkit-box-align: center;
+  justify-content: space-around;
+  gap: 8px;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  line-height: 1;
+  font-weight: 600;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 200ms;
+  height: 2.5rem;
+  min-width: 2rem;
+  font-size: 1rem;
+  background: #e5e5ea;
+  background-image: linear-gradient(to left, #8445e5 0%, #6a33bf78 101.52%);
+  color: #fff;
+  width: auto;
+  text-align: center;
+  border-radius: 9999px;
+  border-style: none;
 }
 
 .mainButton {

@@ -20,6 +20,7 @@ export default function SwitchNetwork() {
   const [, switchNetwork] = useNetwork();
 
   const networkName = ChainIdname();
+  const Polygon = "/icons/polygon.png"
 
   return (
 <>
@@ -33,8 +34,8 @@ export default function SwitchNetwork() {
         </Modal.Header>
         <Modal.Body style={{textAlign: 'center'}}>Silahkan ganti ke jaringan {networkName}.
         <br /><p />
-    <Button onClick={() => switchNetwork(Number(process.env.NEXT_PUBLIC_CHAIN_ID))} className={styles.mainButton}>
-       Ganti Jaringan
+    <Button onClick={() => switchNetwork(Number(process.env.NEXT_PUBLIC_CHAIN_ID))} className={styles.switchButton}>
+      <Image src={Polygon} width={20} height={20} alt="polygon" /> {networkName}
     </Button>
     </Modal.Body>
       </Modal>) : (<></>)}

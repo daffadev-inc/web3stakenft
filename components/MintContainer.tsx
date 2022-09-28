@@ -15,6 +15,10 @@ import Swal from 'sweetalert2';
 import { DROP_EDITION_ADDRESS } from "../const/contract";
 import styles from "../styles/App.module.scss";
 
+const VipCard = '/vipcard.png'
+const Claim = 'Claim'
+const Minting = 'Minting...'
+
 export default function MintContainer() {
   const editionDrop = useEditionDrop(DROP_EDITION_ADDRESS);
   const { mutate: claim, isLoading } = useClaimNFT(editionDrop);
@@ -69,7 +73,7 @@ export default function MintContainer() {
       <p>Claim your BOT Pass Card to start.</p>
 
       <Card className={`${styles.nftBox} ${styles.spacerBottom}`}>
-        <Image src="/avatar.gif" width={300} height={300} alt='avatar' />
+        <Image src={VipCard} width={300} height={300} alt='avatar' />
 
         {isLoading ? (
       <Button className={styles.btn_absBottom} disabled>
@@ -80,7 +84,7 @@ export default function MintContainer() {
           role="status"
           aria-hidden="true"
         />
-        <span> Minting...</span>
+        <span> {Minting}</span>
       </Button>
     ) : (
       <Button className={styles.btn_absBottom}
@@ -88,7 +92,7 @@ export default function MintContainer() {
           mint()
         }
 
-      >Claim</Button>
+      >{Claim}</Button>
  )}
       </Card>
     </div>

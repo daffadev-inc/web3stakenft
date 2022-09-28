@@ -7,6 +7,9 @@ import Container from 'react-bootstrap/Container';
 import Image from 'next/image';
 import style from "../styles/App.module.scss";
 
+const Banner = '/banner.png'
+const TxtTitle = 'TestNet'
+const BtnTxt = 'Lanjutkan'
 
 function Page() {
   const values = [true, 'xxl-down'];
@@ -24,20 +27,20 @@ return (
 <>
       <Modal show={show} fullscreen={fullscreen} backdrop="static" keyboard={false} onHide={handleClose} style={{backgroundColor: "#fff"}}>
         <Modal.Header>
-          <Modal.Title>TestNet</Modal.Title>
+          <Modal.Title>{TxtTitle}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="show-grid">
         <Container>
           <Row>
             <Col xs={12} md={5}>
-              <Image src='/icons/noimage.jpg' alt='' width="640px" height="620px" className={style.page_img} />
+              <Image src={Banner} alt='' width="640px" height="620px" className={style.page_img} />
             </Col>
             <Col xs={12} md={7} className={style.flx_column}>
               <h1 className={style.font_title}>Join the Movement<br/><span className={style.flx_end}>and unlock</span>the unique Art</h1>
                 <span className={style.font_desc}>Let's discover our work.</span>
         <div className={style.flx_end}>
           <Button variant="primary" onClick={handleClose}>
-            Lanjutkan
+            {BtnTxt}
           </Button>
         </div>
             </Col>
