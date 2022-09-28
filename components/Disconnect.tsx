@@ -18,7 +18,7 @@ export default function Disconnect() {
         {address ? (
         <Button className={style.btn_logout} onClick={() => disconnectWallet()} variant='danger'>
         <Image src={Polygon} width={20} height={20} alt="polygon" />
-                    <p style={{margin: 0}}>{address.slice(0, 7).concat("*").concat(address.slice(-4))}</p>
+                    <p style={{margin: 0}}>{address.slice(0, 4).concat("*").concat(address.slice(-4))}</p>
         </Button>
           ) : (<></>)}
     </>

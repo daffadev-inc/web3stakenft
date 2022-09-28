@@ -30,7 +30,7 @@ export default function SwitchNetwork() {
         centered
         backdrop="static"
         keyboard={false}>
-        <Modal.Header>
+        <Modal.Header style={{justifyContent: 'center'}}>
           <Modal.Title style={{color: '#cd0228',justifyContent: 'center'}} className={styles.flx_center}><RiErrorWarningFill/> Salah Jaringan</Modal.Title>
         </Modal.Header>
         <Modal.Body style={{textAlign: 'center'}}>Silahkan ganti ke jaringan {networkName}.
