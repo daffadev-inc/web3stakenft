@@ -32,10 +32,10 @@ return (
         <Modal.Body className="show-grid">
         <Container>
           <Row>
-            <Col xs={12} md={5}>
+            <Col xs={12} md={6}>
               <Image src={Banner} alt='' width="640px" height="620px" className={style.page_img} />
             </Col>
-            <Col xs={12} md={7} className={style.flx_column}>
+            <Col xs={12} md={6} className={style.flx_column}>
               <h1 className={style.font_title}>Join the Movement<br/><span className={style.flx_end}>and unlock</span>the unique Art</h1>
                 <span className={style.font_desc}>Let's discover our work.</span>
         <div className={style.flx_end}>
