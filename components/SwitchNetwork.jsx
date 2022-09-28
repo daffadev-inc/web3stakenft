@@ -5,6 +5,7 @@ import {
   ChainId,
   useChainId
 } from "@thirdweb-dev/react"
+import Image from 'next/image';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { RiErrorWarningFill } from "react-icons/ri";
