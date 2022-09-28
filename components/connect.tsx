@@ -7,6 +7,10 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import style from "../styles/App.module.scss";
 
+const WC = "WalletConnect"
+const MM = "Metamask"
+const CB = "CoinBase"
+const ConnectTxt = 'Connect your Wallet'
 
 export default function Connect() {
   const [show, setShow] = useState(false);
@@ -24,19 +28,19 @@ return (
 <Stack className="col-md-5 mx-auto">
     <Card className={`${style.loginBox} ${style.glass}`} style={{maxWidth: '22rem'}}>
       <Card.Body>
-           <Card.Title style={{textAlign: 'center'}}>Connect your Wallet</Card.Title>
+           <Card.Title style={{textAlign: 'center'}}>{ConnectTxt}</Card.Title>
     <ListGroup className={style.glass}>
       <ListGroup.Item className={style.flx_btn_between} action  
           onClick={connectWithCoinbaseWallet}>
-        Coinbase <i className={style.coinbase}></i>
+        {CB} <i className={style.coinbase}></i>
       </ListGroup.Item>
       <ListGroup.Item className={style.flx_btn_between} action  
           onClick={connectWithWalletConnect}>
-        WalletConnect <i className={style.walletconnect}></i>
+        {WC} <i className={style.walletconnect}></i>
       </ListGroup.Item>
       <ListGroup.Item className={style.flx_btn_between} action 
           onClick={connectWithMetamask}>
-        MetaMask <i className={style.metamask}></i>
+        {MM} <i className={style.metamask}></i>
       </ListGroup.Item>
     </ListGroup>
       </Card.Body>

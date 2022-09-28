@@ -37,7 +37,7 @@ export default function MintContainer() {
           onSuccess: (data) => {
             Swal.fire({
               title: 'Success!',
-              text: 'NFT berhasil diclaim..',
+              text: 'Pass Card berhasil diclaim..',
               icon: 'success',
               confirmButtonText: 'Cool'
               });
@@ -46,7 +46,7 @@ export default function MintContainer() {
             const e = error;
             Swal.fire({
               title: 'Error!',
-              text: 'Gagal Claim NFT..',
+              text: 'Claim Pass Card Gagal..',
               icon: 'error',
               confirmButtonText: 'Blah'
               });
