@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Disconnect from './Disconnect';
 
-const TxtTitle = 'TestNet'
+const TxtTitle = 'TestNet Mumbai'
 
 function Navigation() {
   return (

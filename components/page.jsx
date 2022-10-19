@@ -8,7 +8,7 @@ import Image from 'next/image';
 import style from "../styles/App.module.scss";
 
 const Banner = '/banner.png'
-const TxtTitle = 'TestNet'
+const TxtTitle = 'TestNet Mumbai'
 const BtnTxt = 'Lanjutkan'
 
 function Page() {
